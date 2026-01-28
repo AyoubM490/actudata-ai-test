@@ -120,8 +120,6 @@ def main():
             help="Posez une question sur les documents du client sélectionné"
         )
         
-        top_k = st.slider("Nombre de résultats", 1, 10, 3)
-        
         if st.button("🔍 Rechercher", type="primary"):
             if query.strip():
                 # Message informatif pour la première utilisation
@@ -130,7 +128,7 @@ def main():
                                     "Les recherches suivantes seront beaucoup plus rapides.")
                 
                 with st.spinner("Recherche en cours... (cela peut prendre quelques minutes lors du premier téléchargement du modèle)"):
-                    result = search_documents(api_key, query, top_k)
+                    result = search_documents(api_key, query)
                     info_placeholder.empty()  # Supprimer le message info une fois la recherche terminée
                     
                     if result:

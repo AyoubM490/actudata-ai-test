@@ -75,6 +75,16 @@ Cette approche garantit une **séparation stricte des données**, une **recherch
 
 # 🚀 Démarrage rapide
 
+## Cloner le dépôt
+
+```bash
+# Cloner le dépôt GitHub
+git clone https://github.com/AyoubM490/actudata-ai-test.git
+
+# Aller dans le dossier du projet
+cd actudata-ai-test
+```
+
 ## Installation (une seule fois)
 
 ```bash
